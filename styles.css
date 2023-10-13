@@ -1,0 +1,159 @@
+/* Eisenhower Style*/
+
+h1 {
+	font-family: "Calibri", Helvetica, Arial, sans-serif;
+	padding-left: 0px;
+	font-size: 20px;
+	font-weight: normal;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	text
+}
+
+h4 {
+	font-family: "Calibri", Helvetica, Arial, sans-serif;
+	padding-left: 0px;
+	font-size: 15px;
+	font-weight: normal;
+	margin-bottom: 10px;
+	margin-top: 5px;
+	text-decoration: underline;
+}
+
+h5 {
+	font-family: "Calibri", Helvetica, Arial, sans-serif;
+	padding-left: 0px;
+	font-size: 15px;
+	font-weight: normal;
+	margin-bottom: 10px;
+	margin-top: 5px;
+}
+
+.container {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+ul li{
+	list-style: none;
+	font-size: 17px;
+	padding: 12px 5px 5px 25px;
+	user-select: none;
+	position: relative;
+}
+
+ul li::before{
+	content: '';
+	position: absolute;
+	height: 20px;
+	width: 20px;
+	border-radius: 20%;
+	background-image: url("unchecked.svg");
+	background-size: cover;
+	background-position: center;
+	top: 13px;
+	left: 0px;
+}
+
+ul {
+	margin-block-start: 0em;
+	padding-inline-start: 5px;
+}
+
+ul li.checked{
+	color: #555;
+	text-decoration: line-through;
+}
+
+ul li.checked::before{
+	background-image: url("checked.svg");
+}
+
+.row{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #edeef0;
+	border-radius: 30px;
+	padding-left: 10px;
+	margin-bottom: 5px;
+}
+
+ul li span{
+	position: absolute;
+	right: 0;
+	top: 5px;
+	width: 40px;
+	height: 40px;
+	font-size: 22px;
+	color: #555;
+	line-height: 40px;
+	text-align: center;
+}
+
+ul li span:hover{
+	background: #edeef0;
+}
+
+input{
+	flex: 1;
+	border: none;
+	outline: none;
+	background: transparent;
+}
+
+button {
+	border: none;
+	outline: none;
+	padding: 8px 30px;
+	background: #000;
+	color: #fff;
+	font-size: 12px;
+	cursor: pointer;
+	border-radius: 40px;
+}
+
+.image-container {
+  width: 100%; /* Set the width of the container */
+  height: 200px; /* Set the height of the container */
+  overflow: hidden; /* Hide anything outside the container */
+}
+
+.image-container img {
+  width: 100%; /* Make the image fill the container horizontally */
+  height: auto; /* Maintain the aspect ratio of the image */
+  object-fit: cover; /* Crop the image to cover the container */
+}
+
+.main_wrapper {
+	display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1%;
+    webkit-box-flex: 1;
+    flex: auto;
+}
+
+.main_box {
+    webkit-box-flex: 0;
+    flex: 0 0 48%;
+    max-width: 48%;
+    background: white;
+    padding: 1.5rem 1.5rem 1.0rem;
+    margin: 0 1%;
+    margin-bottom: .5rem;
+    border-radius: 3px;
+    box-sizing: border-box;
+    border-left: 10px solid transparent;
+    border-top: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    font-size: .875;
+    position: relative;
+    height: 47%;
+    min-height: 310px;
+}
+
+.main_text {
+	margin-bottom: 0.5rem;
+	position: relative;
+}
