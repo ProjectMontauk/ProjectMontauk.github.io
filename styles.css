@@ -34,6 +34,16 @@ h5 {
 	margin: 0 auto;
 }
 
+.contract{
+	margin-left: 35px;
+	margin-top: 15px;
+	font-size: 20px;
+}
+
+a {
+	color: blue;
+}
+
 ul li{
 	list-style: none;
 	font-size: 17px;
