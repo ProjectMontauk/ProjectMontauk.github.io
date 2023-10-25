@@ -1,4 +1,14 @@
 /* Eisenhower Style*/
+#text {
+	font-family: "Calibri", Helvetica, Arial, sans-serif;
+	padding-left: 0px;
+	padding-bottom: 30px;
+	font-size: 20px;
+	font-weight: normal;
+	margin-top: 5px;
+	margin-bottom: 40px;
+	margin-right: 20px;
+}
 
 h1 {
 	font-family: "Calibri", Helvetica, Arial, sans-serif;
